@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import { documents, assistant } from './api';
+import LegalEaseAnalyzer from './LegalEaseAnalyzer';
 import './Dashboard.css';
 
 export default function Dashboard() {
@@ -90,6 +91,12 @@ export default function Dashboard() {
           }}
         >
           📁 My Documents ({documents_list.length})
+        </button>
+        <button
+          className={`tab ${activeTab === 'analyze' ? 'active' : ''}`}
+          onClick={() => setActiveTab('analyze')}
+        >
+          ⚖️ Clause Analyzer
         </button>
       </div>
 
@@ -220,6 +227,13 @@ export default function Dashboard() {
               ))}
             </div>
           )}
+        </div>
+      )}
+
+      {/* Clause Analyzer Tab */}
+      {activeTab === 'analyze' && (
+        <div className="tab-content">
+          <LegalEaseAnalyzer />
         </div>
       )}
 
