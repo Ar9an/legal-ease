@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "legalease",
   "version": "1.0.0",
   "description": "",
@@ -13,5 +14,44 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
+=======
+  "name": "legal-ease-backend",
+  "version": "1.0.0",
+  "description": "Backend for LegalEase AI document simplifier",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "legal",
+    "ai",
+    "express",
+    "mongodb",
+    "mern"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.6.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.9.0",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^3.11.0",
+    "tesseract.js": "^7.0.0",
+    "canvas": "^3.2.3",
+    "express-rate-limit": "^6.10.0",
+    "joi": "^17.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+>>>>>>> 92362a96123418114d862c6f81a589696e035a2d
   }
 }
