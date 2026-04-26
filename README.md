@@ -155,7 +155,7 @@ frontend/
 
 ---
 
-## 🔄 Available Scripts
+## 🔄  Scripts
 
 ```bash
 # Start dev server
